@@ -6,15 +6,15 @@ const os = require('os');
 
 var routes = require("./routes/routes.js")(app);
 
-if(cluster.isMaster){
+if (cluster.isMaster) {
   const cpus = os.cpus().length;
   console.log(`Forking for ${cpus} CPU`);
-  for(var i =0; i<cpus;i++){
+  for (var i = 0; i < cpus; i++) {
     cluster.fork();
-  } 
-}else{
-  var server = app.listen(3000, function(){
-  console.log('Server listening at port : %s', server.address().port);
-  console.log(`started process ${pid}`);
-});
+  }
+} else {
+  var server = app.listen(3000, function () {
+    console.log('Server listening at port : %s', server.address().port);
+    console.log(`started process ${pid}`);
+  });
 };
