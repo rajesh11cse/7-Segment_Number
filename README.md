@@ -4,13 +4,13 @@ Steps to compile and run the application
 
 You must have the node, installed on your system globally
 
-Copy the git url https://github.com/rajesh11cse/EnukeNodeAssignment.git
+Extract the file RAJESH_KUMAR_so_node_test.zip;
 
-Open terminal and put 'git clone https://github.com/rajesh11cse/EnukeNodeAssignment.git'
+Open folder in text-editor
 
-Go inside EnukeNodeAssignment
+Go inside the RAJESH_KUMAR_so_node_test through CMD command interface.
 
-run comamd 'npm install --save' then run application by 'node app.js'
+run comand 'npm install --save' then run application by 'node app.js'
 
 
 1. The Marco Polo Game  
